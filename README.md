@@ -1,0 +1,1 @@
+takes the top comment of a reddit post and returns it
