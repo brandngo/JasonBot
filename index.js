@@ -16,7 +16,6 @@ bot.on('message', msg => {
   let args = msg.content.replace(moniker + command, '').trim();
 
   if (msg.mentions.users.first() === bot.user) {
-    console.log('works');
     msg.channel.send("( ͡~ ͜ʖ ͡~)");
   }
 
