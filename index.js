@@ -15,6 +15,11 @@ bot.on('message', msg => {
   let command = msg.content.split(' ')[0].slice(1);
   let args = msg.content.replace(moniker + command, '').trim();
 
+  if (msg.mentions.users.first() === bot.user) {
+    console.log('works');
+    msg.channel.send("( ͡~ ͜ʖ ͡~)");
+  }
+
   if (msg.content.startsWith(moniker)) {
     switch (command) {
       case 'jason': {
